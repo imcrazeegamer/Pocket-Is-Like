@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3104d8716dbbe3d4a92b80edc0de3bcf, type: 3}
+  m_Name: Jab
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8422312821946962684, guid: bcfd174ad13f3a24498a3425b8226dd5, type: 3}
+  power:
+  - 5
+  - 10
+  speed: 1
+  accuracy: 1
+  Slots:
+  - {fileID: 11400000, guid: c990e8ac99da6a7428d36e4b9be911a1, type: 2}
+  - {fileID: 11400000, guid: ece67f7e14d361548aab74897255fbb9, type: 2}
+  abilityType: 2
