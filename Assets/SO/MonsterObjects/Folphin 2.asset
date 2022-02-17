@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2068ea683120ecf4db537d7f047b453c, type: 3}
-  m_Name: Folphin
+  m_Name: Folphin 2
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: ac58e47cdd994b94482fc14d8ad1d1db, type: 2}
+  stats: {fileID: 11400000, guid: 94dbe10bc244fad4983283022123fcca, type: 2}
   abilities:
   - {fileID: 11400000, guid: 7e94c336f4376804688f8d9d92c2ae3a, type: 2}
   - {fileID: 11400000, guid: a05d4af7afa911c4689eaa6d5b88c593, type: 2}
   - {fileID: 11400000, guid: f22f76139f9ef474a8b72171c3380da9, type: 2}
   - {fileID: 11400000, guid: 4913e7cd8736ada4781ed357f5ccdc9c, type: 2}
+  sprite: {fileID: 0}

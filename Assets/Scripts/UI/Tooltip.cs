@@ -31,12 +31,12 @@ public class Tooltip : MonoBehaviour
         
         Vector2 pos = (Vector2)objectTransform.InverseTransformVector(objectTransform.position) + offset;
         Vector2 screenBounds = new Vector2(Screen.width, Screen.height);
-        Debug.Log("boundsx" + (rect.width - screenBounds.x / 2));
-        Debug.Log("boundsy" + (rect.height - screenBounds.y / 2));
+        //Debug.Log("boundsx" + (rect.width - screenBounds.x / 2));
+        //Debug.Log("boundsy" + (rect.height - screenBounds.y / 2));
         
         pos.x = Mathf.Clamp(pos.x, -300, screenBounds.x - rect.width);
         pos.y = Mathf.Clamp(pos.y, rect.height - screenBounds.y / 2, screenBounds.y - rect.height);
-        Debug.Log("Location To Draw" + pos);
+        //Debug.Log("Location To Draw" + pos);
         rectTransform.anchoredPosition = pos;
 
 

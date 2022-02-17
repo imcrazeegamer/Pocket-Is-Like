@@ -38,21 +38,21 @@ public class ModularAbility : Ability
     private bool Blast(Monster user, Monster target)
     {
         Stats stat = ((RedGem)Slots[0]).GetValue();
-        target.stats.SetStat(stat, target.stats.GetStat(stat) - power[0]);
+        target.monsterData.stats.SetStat(stat, target.monsterData.stats.GetStat(stat) - power[0]);
         return true;
     }
     private bool Heal(Monster user, Monster target)
     {
         Stats stat = ((RedGem)Slots[0]).GetValue();
-        user.stats.SetStat(stat, user.stats.GetStat(stat) + power[0]);
+        user.monsterData.stats.SetStat(stat, user.monsterData.stats.GetStat(stat) + power[0]);
         return true;
     }
     private bool StatMod(Monster user, Monster target)
     {
         Stats userStat = ((RedGem)Slots[0]).GetValue();
         Stats targetStat = ((RedGem)Slots[1]).GetValue();
-        user.stats.SetStat(userStat, user.stats.GetStat(userStat) + power[0]);
-        target.stats.SetStat(targetStat, target.stats.GetStat(targetStat) - power[1]);
+        user.monsterData.stats.SetStat(userStat, user.monsterData.stats.GetStat(userStat) + power[0]);
+        target.monsterData.stats.SetStat(targetStat, target.monsterData.stats.GetStat(targetStat) - power[1]);
         return true;
     }
     public void UpdateDiscriptions()
@@ -73,8 +73,6 @@ public class ModularAbility : Ability
     {
         return (power.ElementAtOrDefault(index) == 0 ? "null" : arr[index].ToString());
     }
-
-
 
     void _onValidate()
     {

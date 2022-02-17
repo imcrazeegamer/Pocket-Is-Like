@@ -8,7 +8,7 @@ public class AbilityPanel : MonoBehaviour
 
     void Start()
     {
-        foreach(ModularAbility ability in GameData.data.Monsters[0].abilities)
+        foreach(ModularAbility ability in FindObjectOfType<GameData>().data.Players[0].Monsters[0].abilities)
         {
             GameObject tPrefab = abilityPrefab;
             AbilityUI aui = tPrefab.GetComponent<AbilityUI>();

@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New SaveFile", menuName = "GameData")]
 public class GameDataSO : ScriptableObject
 {
-    public List<Monster> Monsters;
+    public List<Player> Players;
 }

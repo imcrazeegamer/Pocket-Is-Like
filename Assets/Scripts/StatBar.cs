@@ -12,15 +12,12 @@ public class StatBar : MonoBehaviour
 
     [SerializeField] Stats current_stat = new Stats();
     Slider s;
-    void Start()
-    {
-        s = GetComponent<Slider>();
-        s.maxValue = source.stats.GetStat(max_stat);
-    }
 
     // Update is called once per frame
     void Update()
     {
-        s.value = source.stats.GetStat(current_stat);
+        s = GetComponent<Slider>();
+        s.maxValue = source.monsterData.stats.GetStat(max_stat);
+        s.value = source.monsterData.stats.GetStat(current_stat);
     }
 }

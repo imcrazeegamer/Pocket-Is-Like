@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] Color color2;
     Transform tran;
     ParticleSystem.MainModule partical;
-
+    public Vector3 MovementDirection = new Vector3(0.07f, 0f, 0f);
     void Start()
     {
         tran = GetComponent<Transform>();
@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        tran.Translate(0.07f, 0f, 0f);
+        tran.Translate(MovementDirection);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

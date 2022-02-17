@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf650b8bd0366445bdd4db7c9d55936, type: 3}
-  m_Name: DefaultSaveFile
+  m_Script: {fileID: 11500000, guid: 2ed0594f96659a34d9a5886983b26d56, type: 3}
+  m_Name: Folphin 1
   m_EditorClassIdentifier: 
-  Players:
-  - {fileID: 11400000, guid: 22606ffa0e51b3c458a58963564eab0c, type: 2}
-  - {fileID: 11400000, guid: b524156c32e1a694a9d0e0e4f99580c4, type: 2}
+  baseHp: 100

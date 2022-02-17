@@ -27,7 +27,7 @@ public class Ability : ScriptableObject
     }
     protected bool AccuracyCheck(Monster user) 
     {
-        float monsterAccuracy = user.stats.GetStat(Stats.Accuracy);
+        float monsterAccuracy = user.monsterData.stats.GetStat(Stats.Accuracy);
         return (accuracy * monsterAccuracy) >= UnityEngine.Random.value;
     }
     protected bool HasEmptySlot()
@@ -36,9 +36,13 @@ public class Ability : ScriptableObject
     }
     public static bool SpeedCalc(Monster user, Ability selectedAbility, Monster enemy, Ability enemyAbility) 
     {
-        float uSpeed = user.stats.GetStat(Stats.Speed) + selectedAbility.Speed; 
-        float eSpeed = enemy.stats.GetStat(Stats.Speed) + enemyAbility.Speed; 
+        float uSpeed = user.monsterData.stats.GetStat(Stats.Speed) + selectedAbility.Speed; 
+        float eSpeed = enemy.monsterData.stats.GetStat(Stats.Speed) + enemyAbility.Speed; 
         return SpeedCalc(uSpeed,eSpeed);
+    }
+    public static List<(Monster, Monster, Ability)> SpeedCalc(List<(Monster, Monster, Ability)> abilityCalls)
+    {
+        return abilityCalls.OrderBy(x => x.Item3.Speed).ToList();
     }
     public static bool SpeedCalc(float uSpeed, float eSpeed)
     {

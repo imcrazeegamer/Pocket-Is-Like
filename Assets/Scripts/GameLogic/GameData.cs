@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-    public static GameDataSO data;
+    public GameDataSO data;
     //bool dataGenerated = false;
     private void Awake()
     {

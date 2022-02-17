@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Monster
   - Projectile
+  - UnitSelector
+  - Enemy
   layers:
   - Default
   - TransparentFX

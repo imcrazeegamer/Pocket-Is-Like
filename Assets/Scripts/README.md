@@ -2,17 +2,17 @@
 > A game where you want to be the very best but you have to think to get there
 
 ### To Do Now!!:
-- Design GUI for ability scene
-- Show the abilities
-- Show Gem Inventory
-- Implament the drag and drop stuff
+- show projectile going from user to enemy
+- show projectile missing the enemy
+- cleanup Log and bottom hud
+- Dead Units Shouldnt attack
 
 ### Goals
-- Have a Scence that lets me modifiy abilities before battle
+- Implament NvN battles
 
 ### Features?:
 - Think about what to do with empty slot exeptions
-- show projectile missing the enemy -> remove log -> make bottom hud smaller
+-  remove log -> make bottom hud smaller
 - Draw 2 Base Monsters and animation sprite Sheets
 - More Base Ability Types
 - More Gem Types
