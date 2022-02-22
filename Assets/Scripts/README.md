@@ -2,13 +2,14 @@
 > A game where you want to be the very best but you have to think to get there
 
 ### To Do Now!!:
-- show projectile going from user to enemy
-- show projectile missing the enemy
-- cleanup Log and bottom hud
 - Dead Units Shouldnt attack
+- limit target to 1
+- add damage markers
+- bug#-1 ariel doesnt like my colors
 
 ### Goals
 - Implament NvN battles
+- Edit all monsters abilites
 
 ### Features?:
 - Think about what to do with empty slot exeptions
@@ -30,4 +31,7 @@
 - Green Gem = [Fire,Earth,Water,Air]<Type>
 - Blue Gem = [Frenzy,Rage,Divinity]<Status>
 - Purple Gem [Folphin,Fire ememental]<MonsterBase>
+- Grey Gem = [self,Enemy,AOE]<Targeting>
+- Rainbow Gem = [2X,4X,64X,420X]<Mulicast>
+- math Gem = [100%OTTET ,]<Probablity>{of the time every time}
 - Equipable Items that have modifires that change the effectiveness of the Gems
